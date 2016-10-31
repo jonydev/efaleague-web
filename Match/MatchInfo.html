@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/matchinfo.js"></script>
+    <style>
+        div.row{padding-top:5px;}
+        div.left{height:150px}
+        div.mid{height:150px}
+        div.right{height:150px}
+        p.match{text-align: center; margin-top: 60px}
+        p.notmatch{text-align: center; padding-top: 20px}
+        p.teamname{text-align: center; padding-top: 10px}
+        img.icon{width:30px;height:30px;margin-top:35px;background-color: transparent}
+        img.star{width:30px;height:30px;background-color: transparent}
+    </style>
+</head>
+<body>
+<!-- 图标和比分 -->
+<div id = "iconscore" class="container">
+    <!--<div class="col-xs-1"></div>-->
+    <!--<div class="col-xs-3 left">-->
+        <!--<img class="icon center-block" src="images/default.png"/>-->
+        <!--<p class="teamname">疾风联队</p>-->
+    <!--</div>-->
+    <!--<div class="col-xs-4 mid">-->
+        <!--<p class="notmatch">未开赛</p>-->
+        <!--<p class="notmatch">2016-7-11</p>-->
+        <!--<p class="notmatch">0:00</p>-->
+    <!--</div>-->
+    <!--<div class="col-xs-3 right">-->
+        <!--<img class="icon center-block" src="images/default.png"/>-->
+        <!--<p class="teamname">疾风联队</p>-->
+    <!--</div>-->
+    <!--<div class="col-xs-1"></div>-->
+</div>
+
+<div style="padding: 10px">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            参赛人员
+        </div>
+        <div class="panel-body">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <div>
+                        <ul id="nav" class="nav nav-pills">
+                            <li id="home" class="active"><a href="javascript:void(0)" onclick="clickhome()">主队</a></li>
+                            <li id="away"><a href="javascript:void(0)" onclick="clickaway()">客队</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="member">人员名单</div>
+        </div>
+    </div>
+</div>
+
+<div id = "divreferee" style="padding: 10px">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            裁判组
+        </div>
+        <div class="panel-body">
+            <p id = "referee">主裁：</p>
+            <p id="assistref">边裁：</p>
+            <p id="fourth">第四官员：</p>
+        </div>
+    </div>
+</div>
+
+<div id="divstar1" style="padding: 10px">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            判罚准确性
+        </div>
+        <div class="panel-body">
+            <div>
+                <img class="star1" src="images/star.png"/>
+                <img class="star1" src="images/star.png"/>
+                <img class="star1" src="images/star.png"/>
+                <img class="star1" src="images/star.png"/>
+                <img class="star1" src="images/star.png"/>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="divstar2" style="padding: 10px">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            执法公正性
+        </div>
+        <div class="panel-body">
+            <div>
+                <img class="star2" src="images/star.png"/>
+                <img class="star2" src="images/star.png"/>
+                <img class="star2" src="images/star.png"/>
+                <img class="star2" src="images/star.png"/>
+                <img class="star2" src="images/star.png"/>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="divstar3" style="padding: 10px">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            比赛掌控力
+        </div>
+        <div class="panel-body">
+            <div>
+                <img class="star3" src="images/star.png"/>
+                <img class="star3" src="images/star.png"/>
+                <img class="star3" src="images/star.png"/>
+                <img class="star3" src="images/star.png"/>
+                <img class="star3" src="images/star.png"/>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="submit" style="padding: 10px">
+    <button onclick="submit()" >提交</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>榜单</title>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/billboard.js"></script>
+    <style>
+        li.nav{text-align: center}
+        td.c{text-align:center}
+        td.row1{text-color:white;color:white}
+        div.act{color:blue}
+        td.left{margin-left:30px}
+        td.right{margin-right:30px}
+    </style>
+</head>
+<body>
+<!--<nav class="navbar navbar-default" role="navigation">-->
+    <!--<div class="container-fluid">-->
+        <!--<div>-->
+            <!--<ul id="nav" class="nav nav-pills">-->
+                <!--<li id="score" class="active col-xs-3 nav"><a href="javascript:void(0)" onclick="clickScore()">积分</a></li>-->
+                <!--<li id="goal" class="col-xs-3 nav"><a href="javascript:void(0)" onclick="clickGoal()">进球</a></li>-->
+                <!--&lt;!&ndash;<li id="assist"><a href="javascript:void(0)" onclick="clickAssist()">助攻</a></li>&ndash;&gt;-->
+                <!--<li id="cards" class="col-xs-3 nav"><a href="javascript:void(0)" onclick="clickCards()">红黄牌</a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+
+<!--</nav>-->
+
+<div id="nav" style="height: 40px;">
+    <div id="score" class="col-xs-3 act" style="text-align: center;padding-top: 10px" onclick="clickScore()">积分</div>
+    <div id="goal"class="col-xs-3" style="text-align: center;padding-top: 10px" onclick="clickGoal()">射手</div>
+    <div id="cards" class="col-xs-3" style="text-align: center;padding-top: 10px" onclick="clickCards()">红黄牌</div>
+</div>
+
+<div>
+    <table id="content" class="table">
+
+    </table>
+</div>
+</body>
+</html>

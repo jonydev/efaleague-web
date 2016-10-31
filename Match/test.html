@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function invoke() {
+            var intenturi = "#Intent;action=com.baidu.searchbox.action.SEARCHCOMBINE_BARCODE;component=com.baidu.searchbox/.CodeScannerActivity;S.feed=yes;end";
+            window.Bdbox_android_send_intent.send(intenturi);
+        }
+    </script>
+</head>
+<body>
+<button style="height:200px" onclick="invoke()">invokeVoice</button>
+</body>
+</html>
